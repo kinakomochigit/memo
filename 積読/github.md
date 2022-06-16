@@ -18,7 +18,7 @@ contact_links:
     url: https://github.com/{REPO}/issues/new?template=issue.md&projects={ORGANIZATION OR REPO}/{PROJECT_NUMBER}&labels=enhancement
 ```
 
-例えば [tanabee/issue-automation-sample](https://github.com/tanabee/issue-automation-sample) リポジトリで [tanabee/issue-automation-sample/projects/1](https://github.com/tanabee/issue-automation-sample/projects/1) の GitHub Project を指定する場合は url 部に `https://github.com/tanabee/issue-automation-sample/issues/new?template=issue.md&projects=tanabee/issue-automation-sample/1&labels=enhancement` と記述します。
+例えば [tanabee/issue-automation-sample](https://github.com/tanabee/issue-automation-sample) リポジトリで [tanabee/issue-automation-sample/projects/1](https://github.com/tanabee/issue-automation-sample/projects/1) の GitHub Project を指定する場合は url 部に `https://github.com/tanabee/issue-automation-sample/issues/new?template=issue.md&projects=tanabee/issue-automation-sample/1&labels=enhancement` と記述します。
 
 Organization 直下のプロジェクトと紐付ける場合は `{ORGANIZATION OR REPO}` 部分に Organization 名を挿入します。
 
@@ -50,4 +50,4 @@ contact_links:
 
 以上。
 
-[GitHub で issue を登録する時に自動でプロジェクトを指定する](https://qiita.com/tanabee/items/bb8817cf683fc35f0b05)
+[GitHub で issue を登録する時に自動でプロジェクトを指定する](https://qita.com/tanabee/items/bb8817cf683fc35f0b05)
