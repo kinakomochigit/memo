@@ -1,29 +1,6 @@
 # GitHub で issue を登録する時に自動でプロジェクトを指定する
 
-GitHub で issue を登録する時に毎度プロジェクト指定を手動で行うのが面倒だったので自動で設定する方法をまとめました。ググってみると GitHub Actions を使った方法が多かったのですが、 この方法では GitHub Actions を利用しません。
-
-![スクリーンショット 2021-09-03 9.29.34.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/19698/885e785b-a7ab-26e7-74cd-d9fff6ef66c7.png)
-↑やりたいこと
-
-
-## テンプレート機能でできない？
-
-GitHub には Issue や Pull Request の作成時に使える[テンプレート機能](https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates)があります。
-
-assignees や labels は以下のようにテンプレートで指定できるので projects も指定できるようになってほしいところですが、この記事の執筆時点ではそのような仕様はないようです。こちらが対応されたらこの記事の方法は採らなくて良いと思います。
-
-```md:.github/ISSUE_TEMPLATE/issue.md
----
-name: 🐞 Bug
-about: File a bug/issue
-title: '[BUG] <title>'
-labels: Bug, Needs Triage
-assignees: ''
----
-
-## TODO
-- [ ] 
-```
+GitHub で issue を登録する時に毎度プロジェクト指定を手動で行うのが面倒だったので自動で設定する方法をまとめました。
 
 ## 方法
 
