@@ -87,3 +87,22 @@ Date:   Xxx Xxx 00 00:00:00 2016 +0000
     add:git アカウント設定
 ```
 [複数のgitアカウントを使い分ける](https://qiita.com/0084ken/items/f4a8b0fbff135a987fea)
+
+# git pull を強制し、リモートでローカルを上書きする方法
+ローカルのmasterを、強制的にリモートのmasterに合わせる
+
+```
+// 1) リモートの最新を取ってきておいて・・
+$ git fetch origin master
+
+// 2) ローカルのmasterを、リモート追跡のmasterに強制的に合わせる！
+$ git reset --hard origin/master
+```
+
+「git pull の強制」というよりは、要は「reset」という方が正しいですね。
+
+もちろん、git reset --hardは、手元にある作業ツリーとインデックスの変更内容は、すべてふっとんで消えてなくなりますので、実行前は注意して慎重に行って下さい。
+
+一般的にgitでは、「コミットされていない変更」は、一度失うともう帰ってこないですので、不安な人は必ず実行前に、git statusして、作業ツリーの状態を確認して下さい。もし、作業ツリーとインデックスを別の場所に退避しておきたかったら「git stash」などがあります。
+
+[ローカルのmasterを、強制的にリモートのmasterに合わせる](https://www-creators.com/archives/1097)
